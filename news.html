@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<link href="templates/crmp-rp-v3/css/font-awesome.min.css" rel="stylesheet">
     <link href="templates/crmp-rp-v3/css/style.css@v=1.09.css" rel="stylesheet">	
+    <script src="https://vk.com/js/api/openapi.js?159" type="text/javascript"></script>
 </head>
 
 <body>
@@ -37,7 +38,13 @@
         <div class="wrap">
             <h1 class="page-title wow fadeInDown">Новости и обновления</h1>
             <div class="count-subscribers wow fadeInUp"><span class="fa fa-vk" aria-hidden="true"></span><span id='count_vk'>16 подписчиков</span></div>
+
+         <div id="vk_community_messages"></div>
+            <script type="text/javascript">
+            VK.Widgets.CommunityMessages("vk_community_messages", 20003922);
+            </script>
             
+                        
             <div class="news-list">
             </div>
         </div>
